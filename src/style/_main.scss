@@ -1,1 +1,3 @@
-@import 'base/reset';
+@use "base/reset";
+@use "utils/variables";
+@use "components/dashboard";
