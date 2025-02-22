@@ -5,7 +5,7 @@
         "description": "ragoût de porc aux feuilles de manioc",
         "ingredients": [
             "porc",
-            "feuilles de manioc",
+            "manioc",
             "oignon",
             "ail",
             "gingembre",
@@ -20,8 +20,8 @@
         "name": "Romazava",
         "description": "ragoût de viande de zébu aux feuilles de brèdes mafana",
         "ingredients": [
-            "viande de zébu",
-            "feuilles de brèdes mafana",
+            "zébu",
+            "brèdes",
             "tomate",
             "oignon",
             "ail",

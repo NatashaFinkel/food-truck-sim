@@ -1,0 +1,99 @@
+[
+    {
+        "id": 10,
+        "name":  "porc",
+        "qantité": ""
+    },
+    {
+        "id": 11,
+        "name": "manioc",
+        "qantité": ""
+    },
+    {
+        "id": 12,
+        "name": "oignon",
+        "qantité": ""
+    },
+    {
+        "id": 13,
+        "name": "ail",
+        "qantité": ""
+    },
+    {
+        "id": 14,
+        "name": "gingembre",
+        "qantité": ""
+    },
+    {
+        "id": 15,
+        "name": "piment",
+        "qantité": ""
+    },
+    {
+        "id": 16,
+        "name": "sel",
+        "qantité": ""
+    },
+    {
+        "id": 17,
+        "name": "poivre",
+        "qantité": ""
+    },
+    {
+        "id": 18,
+        "name": "zébu",
+        "qantité": ""
+    },
+    {
+        "id": 19,
+        "name": "brèdes",
+        "qantité": ""
+    },
+    {
+        "id": 20,
+        "name": "tomate",
+        "qantité": ""
+    },
+    {
+        "id": 21,
+        "name": "poulet",
+        "qantité": ""
+    },
+    {
+        "id": 22,
+        "name": "lait de coco",
+        "qantité": ""
+    },
+
+    {
+        "id": 23,
+        "name": "poisson",
+        "qantité": ""
+    },
+
+    {
+        "id":24,
+        "name": "riz",
+        "qantité": ""
+    },
+    {
+        "id": 25,
+        "name": "curcuma",
+        "qantité": ""   
+    },
+    {
+        "id": 26,
+        "name": "bananes plantains",
+        "qantité": ""
+    },
+    {
+        "id": 27,
+        "name": "huile",
+        "qantité": ""
+    },
+    {
+        "id": 28,
+        "name": "sucre",
+        "qantité": ""
+    }
+]
