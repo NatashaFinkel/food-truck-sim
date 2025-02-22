@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Riz nature",
+        "ingredients": [
+            "riz",
+            "sel"
+        ],
+        "price": 3
+    },
+    {
+        "id": 2,
+        "name": "Riz au curcuma",
+        "ingredients": [
+            "riz",
+            "curcuma"
+        ],
+        "price": 3
+    },
+    {
+        "id": 3,
+        "name": "Bananes plantains",
+        "ingredients": [
+            "bananes plantains",
+            "huile",
+            "sel",
+            "sucre"
+        ],
+        "price": 5
+    }
+]
