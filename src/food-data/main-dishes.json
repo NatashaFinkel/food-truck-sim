@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name": "Ravitoto",
+        "description": "ragoût de porc aux feuilles de manioc",
+        "ingredients": [
+            "porc",
+            "feuilles de manioc",
+            "oignon",
+            "ail",
+            "gingembre",
+            "piment",
+            "sel",
+            "poivre"
+        ],
+        "price": 12
+    },
+    {
+        "id": 2,
+        "name": "Romazava",
+        "description": "ragoût de viande de zébu aux feuilles de brèdes mafana",
+        "ingredients": [
+            "viande de zébu",
+            "feuilles de brèdes mafana",
+            "tomate",
+            "oignon",
+            "ail",
+            "gingembre",
+            "piment",
+            "sel",
+            "poivre"
+        ],
+        "price": 10
+    },
+    {
+        "id": 3,
+        "name": "Akoho sy Sakamalao",
+        "description": "poulet au gingembre",
+        "ingredients": [
+            "poulet",
+            "gingembre",
+            "oignon",
+            "ail",
+            "tomate",
+            "piment",
+            "sel",
+            "poivre"
+        ],
+        "price": 10
+    },
+    {
+        "id": 4,
+        "name": "Poisson au lait de coco",
+        "ingredients": [
+            "poisson",
+            "lait de coco",
+            "tomate",
+            "oignon",
+            "ail",
+            "gingembre",
+            "piment",
+            "sel",
+            "poivre"
+        ],
+        "price": 12
+    },
+    {
+        "id": 5,
+        "name": "Akoho sy voanio",
+        "description": "poulet épicé cuit dans une sauce à base de tomate",
+        "ingredients": [
+            "poulet",
+            "tomate",
+            "oignon",
+            "ail",
+            "gingembre",
+            "piment",
+            "sel",
+            "poivre"
+        ],
+        "price": 12
+    },
+    {
+        "id": 6,
+        "name": "Poisson braisé",
+        "ingredients": [
+            "poisson",
+            "sel",
+            "poivre",
+            "huile",
+            "oignon",
+            "tomate",
+            "ail",
+            "gingembre",
+            "piment"
+        ],
+        "price": 10
+    }
+]
