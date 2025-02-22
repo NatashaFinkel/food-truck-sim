@@ -29,7 +29,7 @@ describe("stockSlice", () => {
   });
 
   it("should add an ingredient", () => {
-    const newIngredient: Ingredient = { id: "3", name: "Fromage", quantity: 7 };
+    const newIngredient: Ingredient = { id: "3", name: "Akoho sy Sakamalao", quantity: 7 };
     const newState = stockReducer(initialState, addIngredient(newIngredient));
 
     expect(newState.ingredients).toHaveLength(3);
