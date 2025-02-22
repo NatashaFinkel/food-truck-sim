@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 7,
         "name": "Riz nature",
         "ingredients": [
             "riz",
@@ -9,7 +9,7 @@
         "price": 3
     },
     {
-        "id": 2,
+        "id": 8,
         "name": "Riz au curcuma",
         "ingredients": [
             "riz",
@@ -18,7 +18,7 @@
         "price": 3
     },
     {
-        "id": 3,
+        "id": 9,
         "name": "Bananes plantains",
         "ingredients": [
             "bananes plantains",
