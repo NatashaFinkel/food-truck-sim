@@ -22,14 +22,14 @@ describe("salesSlice", () => {
           date: "2025-01-28",
         },
         {
-          id: "9",
-          item: "Bananes plantains",
-          price: 5,
+          id: "6",
+          item: "Poisson braisé",
+          price: 10,
           quantity: 7,
           date: "2025-01-28",
         },
       ],
-      totalRevenue: 59,
+      totalRevenue: 94,
     };
   });
 
@@ -52,7 +52,7 @@ describe("salesSlice", () => {
 
     expect(newState.sales).toHaveLength(3);
     expect(newState.sales.find((sale) => sale.id === "2")).toEqual(newSale);
-    expect(newState.totalRevenue).toBe(79);
+    expect(newState.totalRevenue).toBe(114);
   });
 
   it("should clear all sales and reset total revenue", () => {

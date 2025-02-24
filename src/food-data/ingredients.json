@@ -82,18 +82,8 @@
         "qantité": ""   
     },
     {
-        "id": 26,
-        "name": "bananes plantains",
-        "qantité": ""
-    },
-    {
         "id": 27,
         "name": "huile",
-        "qantité": ""
-    },
-    {
-        "id": 28,
-        "name": "sucre",
         "qantité": ""
     }
 ]
