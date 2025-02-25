@@ -1,6 +1,6 @@
 [
     {
-        "id": 7,
+        "id": "side-dish-1",
         "name": "Riz nature",
         "ingredients": [
             "riz",
@@ -10,7 +10,7 @@
         "quantity": 0
     },
     {
-        "id": 8,
+        "id": "side-dish-2",
         "name": "Riz au curcuma",
         "ingredients": [
             "riz",
