@@ -82,7 +82,11 @@
     {
         "id": "ingrédient-17",
         "name": "huile",
-        "quantity": ""
+        "quantity": 0
+    },
+    {
+        "id": "ingrédient-18",
+        "name": "bananes plantains",
         "quantity": 0
     }
 ]
