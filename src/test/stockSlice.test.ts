@@ -7,6 +7,8 @@ import stockReducer, {
 interface Ingredient {
   id: string;
   name: string;
+  ingredients: string[];
+  price: number;
   quantity: number;
 }
 
@@ -16,43 +18,93 @@ describe("stockSlice", () => {
   beforeEach(() => {
     initialState = {
       ingredients: [
-        { id: "4", name: "Poisson au lait de coco", quantity: 5 },
-        { id: "7", name: "Riz nature", quantity: 10 }
+        {
+          id: "main-dish-4",
+          name: "Poisson au lait de coco",
+          ingredients: [
+            "poisson",
+            "lait de coco",
+            "tomate",
+            "oignon",
+            "ail",
+            "gingembre",
+            "piment",
+            "sel",
+            "poivre",
+          ],
+          price: 12,
+          quantity: 5,
+        },
+        {
+          id: "side-dish-1",
+          name: "Riz nature",
+          ingredients: ["riz", "sel"],
+          price: 3,
+          quantity: 10,
+        },
       ],
     };
   });
 
   it("should return the initial state when passed an undefined state", () => {
-    expect(stockReducer(undefined, { type: '' })).toEqual({
+    expect(stockReducer(undefined, { type: "" })).toEqual({
       ingredients: [],
     });
   });
 
   it("should add an ingredient", () => {
-    const newIngredient: Ingredient = { id: "3", name: "Akoho sy Sakamalao", quantity: 7 };
-    const newState = stockReducer(initialState, addIngredient(newIngredient));
+    const testIngredient: Ingredient = {
+      id: "main-dish-3",
+      name: "Poulet au gingembre",
+      ingredients: [
+        "poulet",
+        "gingembre",
+        "oignon",
+        "ail",
+        "tomate",
+        "piment",
+        "sel",
+        "poivre",
+      ],
+      price: 10,
+      quantity: 0,
+    };
+    const newState = stockReducer(
+      { ...initialState, ingredients: [...initialState.ingredients] },
+      addIngredient(testIngredient)
+    );
 
     expect(newState.ingredients).toHaveLength(3);
-    expect(newState.ingredients.find((ing) => ing.id === "3")).toEqual(
-      newIngredient
+
+    const updatedTestIngredient = newState.ingredients.find(
+      (ing) => ing.id === "main-dish-3"
     );
+    expect(updatedTestIngredient?.quantity).toBe(1);
   });
 
   it("should update the quantity of an existing ingredient", () => {
     const newState = stockReducer(
       initialState,
-      updateQuantity({ id: "7", quantity: 15 })
+      updateQuantity({
+        id: "side-dish-1",
+        name: "Riz nature",
+        ingredients: ["riz", "sel"],
+        price: 3,
+        quantity: 10,
+      })
     );
 
-    expect(newState.ingredients.find((ing) => ing.id === "7")?.quantity).toBe(
-      15
-    );
+    expect(
+      newState.ingredients.find((ing) => ing.id === "side-dish-1")?.quantity
+    ).toBe(10);
   });
 
   it("should remove an ingredient", () => {
-    const newState = stockReducer(initialState, removeIngredient("7"));
-
-    expect(newState.ingredients).toHaveLength(1);
+    const newState = stockReducer(
+      initialState,
+      removeIngredient("side-dish-2")
+    );
+    expect(newState.ingredients).toHaveLength(2);
     expect(newState.ingredients.find((ing) => ing.id === "7")).toBeUndefined();
   });
 });
