@@ -1,28 +1,27 @@
 import { useDispatch } from "react-redux";
-import { addIngredient } from "../redux/slices/stockSlice";
+import { addDishToTheMenu } from "../redux/slices/stockSlice";
 import mainDishes from "../food-data/main-dishes.json";
 import sideDishes from "../food-data/side-dishes.json";
-
 
 const Dashboard = () => {
   const dispatch = useDispatch();
   const combinedDishes = [...mainDishes, ...sideDishes];
 
-  const handleAddIngredient = (dish: {
+  const handleAddDishToTheMenu = (dish: {
     id: string;
     name: string;
     ingredients: string[];
     price: number;
     quantity: number;
   }) => {
-    const newIngredient = {
+    const newDish = {
       id: dish.id,
       name: dish.name,
       ingredients: dish.ingredients,
       price: dish.price,
       quantity: dish.quantity,
     };
-  dispatch(addIngredient(newIngredient));
+  dispatch(addDishToTheMenu(newDish));
   };
 
   return (
@@ -40,7 +39,7 @@ const Dashboard = () => {
             <button
               key={dish.id + "-add-btn"}
               id={"ingrédient-" + dish.id + "-add-btn"}
-              onClick={() => handleAddIngredient(dish)}
+              onClick={() => handleAddDishToTheMenu(dish)}
             >
               ajouter
             </button>

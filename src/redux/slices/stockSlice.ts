@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface Ingredient {
+interface MenuItem {
   id: string;
   name: string;
   ingredients: string[];
@@ -9,32 +9,30 @@ interface Ingredient {
 }
 
 interface StockState {
-  ingredients: Ingredient[];
+  items: MenuItem[];
 }
 
 const initialState: StockState = {
-  ingredients: JSON.parse(localStorage.getItem("ingredients") || "[]"),
+  items: JSON.parse(localStorage.getItem("Menu") || "[]"),
 };
-
-
 
 const stockSlice = createSlice({
   name: "stock",
   initialState,
   reducers: {
-    addIngredient: (state, action: PayloadAction<Ingredient>) => {
-      const existingIngredient = state.ingredients.find(
+    addDishToTheMenu: (state, action: PayloadAction<MenuItem>) => {
+      const alreadyStoragedItem = state.items.find(
         (ing) => ing.id === action.payload.id
       );
-      if (existingIngredient) {
-        existingIngredient.quantity += action.payload.quantity + 1;
+      if (alreadyStoragedItem) {
+        alreadyStoragedItem.quantity += action.payload.quantity + 1;
       } else {
-        state.ingredients.push({
+        state.items.push({
           ...action.payload,
           quantity: action.payload.quantity + 1,
         });
       }
-      localStorage.setItem("ingredients", JSON.stringify(state.ingredients));
+      localStorage.setItem("Menu", JSON.stringify(state.items));
     },
 
     updateQuantity: (
@@ -47,35 +45,35 @@ const stockSlice = createSlice({
         quantity: number;
       }>
     ) => {
-      const ingredient = state.ingredients.find(
+      const item = state.items.find(
         (ing) => ing.id === action.payload.id
       );
-      if (ingredient) {
-        ingredient.name = action.payload.name;
-        ingredient.ingredients = action.payload.ingredients;
-        ingredient.price = action.payload.price;
-        ingredient.quantity = action.payload.quantity;
-        localStorage.setItem("ingredients", JSON.stringify(state.ingredients));
+      if (item) {
+        item.name = action.payload.name;
+        item.ingredients = action.payload.ingredients;
+        item.price = action.payload.price;
+        item.quantity = action.payload.quantity;
+        localStorage.setItem("Menu", JSON.stringify(state.items));
       } else {
-        state.ingredients.push({
+        state.items.push({
           id: action.payload.id,
           name: action.payload.name,
           ingredients: [],
           price: action.payload.price,
           quantity: action.payload.quantity,
         });
-        localStorage.setItem("ingredients", JSON.stringify(state.ingredients));
+        localStorage.setItem("Menu", JSON.stringify(state.items));
       }
     },
     removeIngredient: (state, action: PayloadAction<string>) => {
-      state.ingredients = state.ingredients.filter(
+      state.items = state.items.filter(
         (ing) => ing.id !== action.payload
       );
-      localStorage.setItem("ingredients", JSON.stringify(state.ingredients));
+      localStorage.setItem("Menu", JSON.stringify(state.items));
     },
   },
 });
 
-export const { addIngredient, updateQuantity, removeIngredient } =
+export const { addDishToTheMenu, updateQuantity, removeIngredient } =
   stockSlice.actions;
 export default stockSlice.reducer;

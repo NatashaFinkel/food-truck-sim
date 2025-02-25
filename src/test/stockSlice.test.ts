@@ -1,10 +1,10 @@
 import stockReducer, {
-  addIngredient,
+  addDishToTheMenu,
   updateQuantity,
   removeIngredient,
 } from "../redux/slices/stockSlice";
 
-interface Ingredient {
+interface MenuItem {
   id: string;
   name: string;
   ingredients: string[];
@@ -13,11 +13,11 @@ interface Ingredient {
 }
 
 describe("stockSlice", () => {
-  let initialState: { ingredients: Ingredient[] };
+  let initialState: { items: MenuItem[] };
 
   beforeEach(() => {
     initialState = {
-      ingredients: [
+      items: [
         {
           id: "main-dish-4",
           name: "Poisson au lait de coco",
@@ -48,12 +48,12 @@ describe("stockSlice", () => {
 
   it("should return the initial state when passed an undefined state", () => {
     expect(stockReducer(undefined, { type: "" })).toEqual({
-      ingredients: [],
+      items: [],
     });
   });
 
-  it("should add an ingredient", () => {
-    const testIngredient: Ingredient = {
+  it("should add an dish to the menu", () => {
+    const testMenuItem: MenuItem = {
       id: "main-dish-3",
       name: "Poulet au gingembre",
       ingredients: [
@@ -70,16 +70,16 @@ describe("stockSlice", () => {
       quantity: 0,
     };
     const newState = stockReducer(
-      { ...initialState, ingredients: [...initialState.ingredients] },
-      addIngredient(testIngredient)
+      { ...initialState, items: [...initialState.items] },
+      addDishToTheMenu(testMenuItem)
     );
 
-    expect(newState.ingredients).toHaveLength(3);
+    expect(newState.items).toHaveLength(3);
 
-    const updatedTestIngredient = newState.ingredients.find(
+    const updatedTestMenuItem = newState.items.find(
       (ing) => ing.id === "main-dish-3"
     );
-    expect(updatedTestIngredient?.quantity).toBe(1);
+    expect(updatedTestMenuItem?.quantity).toBe(1);
   });
 
   it("should update the quantity of an existing ingredient", () => {
@@ -95,7 +95,7 @@ describe("stockSlice", () => {
     );
 
     expect(
-      newState.ingredients.find((ing) => ing.id === "side-dish-1")?.quantity
+      newState.items.find((ing) => ing.id === "side-dish-1")?.quantity
     ).toBe(10);
   });
 
@@ -104,7 +104,7 @@ describe("stockSlice", () => {
       initialState,
       removeIngredient("side-dish-2")
     );
-    expect(newState.ingredients).toHaveLength(2);
-    expect(newState.ingredients.find((ing) => ing.id === "7")).toBeUndefined();
+    expect(newState.items).toHaveLength(2);
+    expect(newState.items.find((ing) => ing.id === "7")).toBeUndefined();
   });
 });
