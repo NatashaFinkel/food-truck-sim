@@ -6,7 +6,8 @@
             "riz",
             "sel"
         ],
-        "price": 3
+        "price": 3,
+        "quantity": 0
     },
     {
         "id": 8,
@@ -16,5 +17,7 @@
             "curcuma"
         ],
         "price": 3
+        "price": 3,
+        "quantity": 0
     }
 ]

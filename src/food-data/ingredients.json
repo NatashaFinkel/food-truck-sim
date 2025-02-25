@@ -2,86 +2,87 @@
     {
         "id": "ingrédient-1",
         "name": "porc",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-2",
         "name": "manioc",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-3",
         "name": "oignon",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-4",
         "name": "ail",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-5",
         "name": "gingembre",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-6",
         "name": "piment",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-7",
         "name": "sel",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-8",
         "name": "poivre",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-9",
         "name": "zébu",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-10",
         "name": "brèdes",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-11",
         "name": "tomate",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-12",
         "name": "poulet",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-13",
         "name": "lait de coco",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-14",
         "name": "poisson",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-15",
         "name": "riz",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-16",
         "name": "curcuma",
-        "quantity": ""
+        "quantity": 0
     },
     {
         "id": "ingrédient-17",
         "name": "huile",
         "quantity": ""
+        "quantity": 0
     }
 ]
