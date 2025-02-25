@@ -1,89 +1,87 @@
 [
     {
-        "id": 10,
-        "name":  "porc",
-        "qantité": ""
+        "id": "ingrédient-1",
+        "name": "porc",
+        "quantity": ""
     },
     {
-        "id": 11,
+        "id": "ingrédient-2",
         "name": "manioc",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 12,
+        "id": "ingrédient-3",
         "name": "oignon",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 13,
+        "id": "ingrédient-4",
         "name": "ail",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 14,
+        "id": "ingrédient-5",
         "name": "gingembre",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 15,
+        "id": "ingrédient-6",
         "name": "piment",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 16,
+        "id": "ingrédient-7",
         "name": "sel",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 17,
+        "id": "ingrédient-8",
         "name": "poivre",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 18,
+        "id": "ingrédient-9",
         "name": "zébu",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 19,
+        "id": "ingrédient-10",
         "name": "brèdes",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 20,
+        "id": "ingrédient-11",
         "name": "tomate",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 21,
+        "id": "ingrédient-12",
         "name": "poulet",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 22,
+        "id": "ingrédient-13",
         "name": "lait de coco",
-        "qantité": ""
+        "quantity": ""
     },
-
     {
-        "id": 23,
+        "id": "ingrédient-14",
         "name": "poisson",
-        "qantité": ""
+        "quantity": ""
     },
-
     {
-        "id":24,
+        "id": "ingrédient-15",
         "name": "riz",
-        "qantité": ""
+        "quantity": ""
     },
     {
-        "id": 25,
+        "id": "ingrédient-16",
         "name": "curcuma",
-        "qantité": ""   
+        "quantity": ""
     },
     {
-        "id": 27,
+        "id": "ingrédient-17",
         "name": "huile",
-        "qantité": ""
+        "quantity": ""
     }
 ]
