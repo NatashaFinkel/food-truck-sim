@@ -24,7 +24,7 @@ const Dashboard = () => {
       price: dish.price,
       quantity: dish.quantity,
     };
-  dispatch(addDishToTheMenu(newDish));
+    dispatch(addDishToTheMenu(newDish));
   };
 
   function showMenuItems() {
@@ -66,7 +66,6 @@ const Dashboard = () => {
         {combinedDishes.map((dish) => (
           <div key={dish.id} className="ingredients-list-item">
             <li>{dish.name}</li>
-            <span id={"ingrédient-" + dish.id + "-quantity"}></span>
             <button
               key={dish.id + "-add-btn"}
               id={"ingrédient-" + dish.id + "-add-btn"}
