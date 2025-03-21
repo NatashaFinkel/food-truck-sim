@@ -57,10 +57,13 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h2>Y'a quoi à la carte, aujourd'hui ?</h2>
-      <p>
-        Sélectionnez les plats de votre menu en prenant en compte la feuille de mission.<br></br>
-        Attention à ne pas dépasser le budget !
-      </p>
+      <div className="dashboard-txt-container">
+        <p>
+          Sélectionnez les plats de votre menu en prenant en compte la feuille
+          de mission.
+        </p>
+        <p> Attention à ne pas dépasser le budget !</p>
+      </div>
       <div id="menu-container" className="menu-container"></div>
       <div className="ingredients-list">
         {combinedDishes.map((dish) => (

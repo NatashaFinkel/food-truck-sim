@@ -36,7 +36,7 @@
     },
     {
         "id": "main-dish-3",
-        "name": "Poulet au gingembre",
+        "name": "Poulet gingembre",
         "ingredients": [
             "poulet",
             "gingembre",
@@ -52,7 +52,7 @@
     },
     {
         "id": "main-dish-4",
-        "name": "Poisson au lait de coco",
+        "name": "Poisson lait de coco",
         "ingredients": [
             "poisson",
             "lait de coco",
@@ -69,7 +69,7 @@
     },
     {
         "id": "main-dish-5",
-        "name": "poulet épicé à la tomate",
+        "name": "poulet à la tomate",
         "ingredients": [
             "poulet",
             "tomate",
