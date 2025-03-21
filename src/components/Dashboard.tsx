@@ -58,8 +58,8 @@ const Dashboard = () => {
     <div className="dashboard">
       <h2>Y'a quoi à la carte, aujourd'hui ?</h2>
       <p>
-        Choisissez jusqu'à 3 plats différents, ainsi que 2 accompagnements
-        maximum.
+        Sélectionnez les plats de votre menu en prenant en compte la feuille de mission.<br></br>
+        Attention à ne pas dépasser le budget !
       </p>
       <div id="menu-container" className="menu-container"></div>
       <div className="ingredients-list">
