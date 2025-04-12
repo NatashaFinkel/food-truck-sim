@@ -40,12 +40,13 @@ const stockSlice = createSlice({
         (ing) => ing.id === action.payload.id
       );
       if (alreadyStoragedItem) {
-        alreadyStoragedItem.quantity = action.payload.quantity - 1;
+        alreadyStoragedItem.quantity -= 1;
+        if (alreadyStoragedItem.quantity <= 0) {
+          state.items = state.items.filter(
+            (ing) => ing.id !== action.payload.id
+          );
+        }
         localStorage.setItem("Menu", JSON.stringify(state.items));
-      }
-
-      if (alreadyStoragedItem && alreadyStoragedItem.quantity <= 0) {
-        state.items = state.items.filter((ing) => ing.id !== action.payload.id);
       }
     },
   },

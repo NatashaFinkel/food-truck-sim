@@ -44,9 +44,6 @@ const Dashboard = () => {
           dishElement.classList.add("menu-item");
           dishElement.innerHTML = `<div>${dish.name} : ${dish.quantity}</div>`;
           menuContainer.appendChild(dishElement);
-          if (dish.quantity === 0) {
-            dishElement.remove();
-          }
         }
       );
     }
