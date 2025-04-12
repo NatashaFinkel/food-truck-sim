@@ -1,4 +1,4 @@
-import stockReducer, { addDishToTheMenu } from "../redux/slices/stockSlice";
+import stockReducer, { addDishToTheMenu, removeDishFromTheMenu } from "../redux/slices/stockSlice";
 
 interface MenuItem {
   id: string;
@@ -74,5 +74,18 @@ describe("stockSlice", () => {
       (ing) => ing.id === "main-dish-3"
     );
     expect(updatedTestMenuItem?.quantity).toBe(1);
+  });
+
+  it("should remove a dish from the menu", () => {
+    const u = initialState.items.find((ing) => ing.id === "side-dish-1");
+    if (u) {
+      const newState = stockReducer(
+        { ...initialState, items: [...initialState.items] },
+        removeDishFromTheMenu(u)
+      );
+      expect(
+        newState.items.find((item) => item.id === "side-dish-1")?.quantity
+      ).toBe(9);
+    }
   });
 });

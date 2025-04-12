@@ -40,13 +40,12 @@ const stockSlice = createSlice({
         (ing) => ing.id === action.payload.id
       );
       if (alreadyStoragedItem) {
-        alreadyStoragedItem.quantity += action.payload.quantity - 1;
+        alreadyStoragedItem.quantity = action.payload.quantity - 1;
         localStorage.setItem("Menu", JSON.stringify(state.items));
       }
     },
   },
 });
 
-export const { addDishToTheMenu, removeDishFromTheMenu } =
-  stockSlice.actions;
+export const { addDishToTheMenu, removeDishFromTheMenu } = stockSlice.actions;
 export default stockSlice.reducer;
