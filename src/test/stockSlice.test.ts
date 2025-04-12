@@ -1,6 +1,4 @@
-import stockReducer, {
-  addDishToTheMenu,
-} from "../redux/slices/stockSlice";
+import stockReducer, { addDishToTheMenu } from "../redux/slices/stockSlice";
 
 interface MenuItem {
   id: string;
@@ -50,7 +48,7 @@ describe("stockSlice", () => {
     });
   });
 
-  it("should add an dish to the menu", () => {
+  it("should add a dish to the menu", () => {
     const testMenuItem: MenuItem = {
       id: "main-dish-3",
       name: "Poulet au gingembre",
