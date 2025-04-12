@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-import { addDishToTheMenu, removeDishFromTheMenu } from "../redux/slices/stockSlice";
+import {
+  addDishToTheMenu,
+  removeDishFromTheMenu,
+} from "../redux/slices/stockSlice";
 import mainDishes from "../food-data/main-dishes.json";
 import sideDishes from "../food-data/side-dishes.json";
 
