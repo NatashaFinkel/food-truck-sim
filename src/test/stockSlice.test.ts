@@ -1,7 +1,5 @@
 import stockReducer, {
   addDishToTheMenu,
-  updateQuantity,
-  removeIngredient,
 } from "../redux/slices/stockSlice";
 
 interface MenuItem {
@@ -73,38 +71,10 @@ describe("stockSlice", () => {
       { ...initialState, items: [...initialState.items] },
       addDishToTheMenu(testMenuItem)
     );
-
     expect(newState.items).toHaveLength(3);
-
     const updatedTestMenuItem = newState.items.find(
       (ing) => ing.id === "main-dish-3"
     );
     expect(updatedTestMenuItem?.quantity).toBe(1);
-  });
-
-  it("should update the quantity of an existing ingredient", () => {
-    const newState = stockReducer(
-      initialState,
-      updateQuantity({
-        id: "side-dish-1",
-        name: "Riz nature",
-        ingredients: ["riz", "sel"],
-        price: 3,
-        quantity: 10,
-      })
-    );
-
-    expect(
-      newState.items.find((ing) => ing.id === "side-dish-1")?.quantity
-    ).toBe(10);
-  });
-
-  it("should remove an ingredient", () => {
-    const newState = stockReducer(
-      initialState,
-      removeIngredient("side-dish-2")
-    );
-    expect(newState.items).toHaveLength(2);
-    expect(newState.items.find((ing) => ing.id === "7")).toBeUndefined();
   });
 });

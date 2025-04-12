@@ -35,45 +35,13 @@ const stockSlice = createSlice({
       localStorage.setItem("Menu", JSON.stringify(state.items));
     },
 
-    updateQuantity: (
-      state,
-      action: PayloadAction<{
-        id: string;
-        name: string;
-        ingredients: string[];
-        price: number;
-        quantity: number;
-      }>
-    ) => {
-      const item = state.items.find(
         (ing) => ing.id === action.payload.id
       );
-      if (item) {
-        item.name = action.payload.name;
-        item.ingredients = action.payload.ingredients;
-        item.price = action.payload.price;
-        item.quantity = action.payload.quantity;
-        localStorage.setItem("Menu", JSON.stringify(state.items));
-      } else {
-        state.items.push({
-          id: action.payload.id,
-          name: action.payload.name,
-          ingredients: [],
-          price: action.payload.price,
-          quantity: action.payload.quantity,
-        });
         localStorage.setItem("Menu", JSON.stringify(state.items));
       }
-    },
-    removeIngredient: (state, action: PayloadAction<string>) => {
-      state.items = state.items.filter(
-        (ing) => ing.id !== action.payload
-      );
-      localStorage.setItem("Menu", JSON.stringify(state.items));
     },
   },
 });
 
-export const { addDishToTheMenu, updateQuantity, removeIngredient } =
   stockSlice.actions;
 export default stockSlice.reducer;
