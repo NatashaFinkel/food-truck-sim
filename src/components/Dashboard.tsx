@@ -31,7 +31,6 @@ const Dashboard = () => {
     const menuContainer = document.getElementById("menu-container");
     const menu = JSON.parse(localStorage.getItem("Menu") || "[]");
     if (menuContainer) {
-      console.log(menu);
       menuContainer.innerHTML = "";
       menu.forEach(
         (dish: {
@@ -45,6 +44,9 @@ const Dashboard = () => {
           dishElement.classList.add("menu-item");
           dishElement.innerHTML = `<div>${dish.name} : ${dish.quantity}</div>`;
           menuContainer.appendChild(dishElement);
+          if (dish.quantity === 0) {
+            dishElement.remove();
+          }
         }
       );
     }
