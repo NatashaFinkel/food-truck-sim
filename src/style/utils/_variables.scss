@@ -17,6 +17,7 @@ body {
 h2 {
   font-size: 20px;
 }
+
 header {
   display: flex;
   justify-content: $primary-symmetry;
@@ -105,12 +106,11 @@ header {
 }
 
 @media (max-width: 768px) {
-
-  body{
+  body {
     font-size: 18px;
   }
 
-  h2{
+  h2 {
     font-size: 19px;
   }
   .dashboard {
