@@ -93,7 +93,7 @@ const Dashboard:  React.FC = () => {
               <button
                 key={dish.id + "-add-btn"}
                 id={"ingrédient-" + dish.id + "-add-btn"}
-                className="btn"
+                className="btn add-btn"
                 onClick={() => handleAddDishToTheMenu(dish)}
               >
                 +
@@ -101,7 +101,7 @@ const Dashboard:  React.FC = () => {
               <button
                 key={dish.id + "-remove-btn"}
                 id={"ingrédient-" + dish.id + "-remove-btn"}
-                className="btn"
+                className="btn remove-btn"
                 onClick={() => handleRemoveDishFromTheMenu(dish)}
               >
                 &#45;
