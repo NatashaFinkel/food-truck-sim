@@ -37,7 +37,7 @@ const stockSlice = createSlice({
 
     removeDishFromTheMenu: (state, action: PayloadAction<MenuItem>) => {
       const alreadyStoragedItem = state.items.find(
-        (ing) => ing.id === action.payload.id
+        (stockItem) => stockItem.id === action.payload.id
       );
       if (alreadyStoragedItem) {
         alreadyStoragedItem.quantity -= 1;
