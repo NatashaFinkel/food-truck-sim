@@ -51,12 +51,6 @@ select {
 }
 
 body {
-  /*   background-image: linear-gradient(
-      -225deg,
-      #7085b6 0%,
-      #87a7d9 50%,
-      #def3f8 100%
-    ); */
   background-color: rgba(128, 128, 128, 0.386);
   font-size: 19px;
   max-width: 1440px;
