@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-import { addDishToTheMenu } from "../redux/slices/stockSlice";
+import { addDishToTheMenu, removeDishFromTheMenu } from "../redux/slices/stockSlice";
 import mainDishes from "../food-data/main-dishes.json";
 import sideDishes from "../food-data/side-dishes.json";
 
@@ -50,6 +50,23 @@ const Dashboard = () => {
     }
   }
 
+  const handleRemoveDishFromTheMenu = (dish: {
+    id: string;
+    name: string;
+    ingredients: string[];
+    price: number;
+    quantity: number;
+  }) => {
+    const newDish = {
+      id: dish.id,
+      name: dish.name,
+      ingredients: dish.ingredients,
+      price: dish.price,
+      quantity: dish.quantity,
+    };
+    dispatch(removeDishFromTheMenu(newDish));
+  };
+
   useEffect(() => {
     showMenuItems();
   }, [menuItems]);
@@ -69,13 +86,25 @@ const Dashboard = () => {
         {combinedDishes.map((dish) => (
           <div key={dish.id} className="ingredients-list-item">
             <li>{dish.name}</li>
-            <button
-              key={dish.id + "-add-btn"}
-              id={"ingrédient-" + dish.id + "-add-btn"}
-              onClick={() => handleAddDishToTheMenu(dish)}
-            >
-              ajouter
-            </button>
+            <div className="btn-container">
+              {" "}
+              <button
+                key={dish.id + "-add-btn"}
+                id={"ingrédient-" + dish.id + "-add-btn"}
+                className="btn"
+                onClick={() => handleAddDishToTheMenu(dish)}
+              >
+                +
+              </button>
+              <button
+                key={dish.id + "-remove-btn"}
+                id={"ingrédient-" + dish.id + "-remove-btn"}
+                className="btn"
+                onClick={() => handleRemoveDishFromTheMenu(dish)}
+              >
+                &#45;
+              </button>
+            </div>
           </div>
         ))}
       </div>
