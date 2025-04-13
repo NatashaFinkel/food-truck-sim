@@ -74,7 +74,7 @@ const Dashboard:  React.FC = () => {
   }, [menuItems]);
 
   return (
-    <div className="dashboard">
+    <div className="main-container">
       <h2>Y'a quoi à la carte, aujourd'hui ?</h2>
       <div className="dashboard-txt-container">
         <p>

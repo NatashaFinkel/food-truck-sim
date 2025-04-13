@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission: React.FC = () => {
   return (
-    <div className="dashboard">
+    <div className="main-container">
       <h2>Ta mission</h2>
       <div className="mission-txt-div">
         <p>
