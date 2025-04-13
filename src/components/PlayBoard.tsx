@@ -1,4 +1,5 @@
 import Order from "./Order";
+import StockItem from "./stockItem";
 
 function PlayBoard() {
   return (
@@ -12,6 +13,9 @@ function PlayBoard() {
         </div>
         <div className="container">
           <h2>En stock</h2>
+          <StockItem />
+          <StockItem />
+          <StockItem />
         </div>
       </div>
     </div>
