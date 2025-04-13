@@ -43,10 +43,12 @@ h1,
 h2 {
   text-decoration: underline;
   text-underline-position: under;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 header {
@@ -125,11 +127,20 @@ header {
   justify-content: center;
   border: 1px solid #007bff;
 }
+
 .add-btn:active {
   background-color: rgba(0, 128, 0, 0.331);
 }
 .remove-btn:active {
   background-color: rgba(255, 0, 0, 0.358);
+}
+
+.mission-txt-div {
+  gap: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10%;
 }
 
 @media (max-width: 1024px) {
