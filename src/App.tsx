@@ -1,15 +1,13 @@
-import NavBar from "./components/NavBar";
-import Dashboard from "./components/Dashboard";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <div style={{ marginLeft: "200px", padding: "20px" }}>
         <header>
           <h1>My little food truck ❤️</h1>
         </header>
-        <Dashboard />
+        <AppRouter />
       </div>
     </div>
   );
