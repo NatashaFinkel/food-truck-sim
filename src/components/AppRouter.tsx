@@ -12,7 +12,7 @@ function AppRouter() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/mission" element={<Mission />} />
       </Routes>
     </BrowserRouter>
