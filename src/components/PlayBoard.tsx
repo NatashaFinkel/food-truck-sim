@@ -11,7 +11,7 @@ function PlayBoard() {
           <Order />
           <Order />
         </div>
-        <div className="container">
+        <div className="container stock-container">
           <h2>En stock</h2>
           <StockItem />
           <StockItem />
