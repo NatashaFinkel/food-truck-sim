@@ -1,3 +1,4 @@
+import Order from "./Order";
 
 function PlayBoard() {
   return (
@@ -5,6 +6,9 @@ function PlayBoard() {
       <div className="playboard-container">
         <div className="container order-container">
           <h2>Les commandes</h2>
+          <Order />
+          <Order />
+          <Order />
         </div>
         <div className="container">
           <h2>En stock</h2>
