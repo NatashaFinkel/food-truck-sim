@@ -2,6 +2,7 @@
     {
         "id": "side-dish-1",
         "name": "Riz nature",
+        "description": "Une portion de riz blanc",
         "ingredients": [
             "riz",
             "sel"
@@ -13,6 +14,7 @@
     {
         "id": "side-dish-2",
         "name": "Riz au curcuma",
+        "description": "Une portion de riz au curcuma",
         "ingredients": [
             "riz",
             "curcuma"
@@ -23,6 +25,7 @@
     },
     {
         "id": "side-dish-3",
+        "description": "Une portion de bananes plantains",
         "name": "Bananes plantains",
         "ingredients": [
             "bananes plantains",
