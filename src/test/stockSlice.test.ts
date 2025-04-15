@@ -9,6 +9,7 @@ interface MenuItem {
   ingredients: string[];
   price: number;
   quantity: number;
+  initialSpeedIndex: number;
 }
 
 describe("stockSlice", () => {
@@ -33,6 +34,7 @@ describe("stockSlice", () => {
           ],
           price: 12,
           quantity: 5,
+          initialSpeedIndex: 6,
         },
         {
           id: "side-dish-1",
@@ -40,6 +42,7 @@ describe("stockSlice", () => {
           ingredients: ["riz", "sel"],
           price: 3,
           quantity: 10,
+          initialSpeedIndex: 5,
         },
       ],
     };
@@ -67,6 +70,7 @@ describe("stockSlice", () => {
       ],
       price: 10,
       quantity: 0,
+      initialSpeedIndex: 6
     };
     const newState = stockReducer(
       { ...initialState, items: [...initialState.items] },

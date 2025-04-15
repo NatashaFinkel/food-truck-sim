@@ -14,7 +14,8 @@
             "poivre"
         ],
         "price": 12,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 4
     },
     {
         "id": "main-dish-2",
@@ -32,7 +33,8 @@
             "poivre"
         ],
         "price": 10,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 3
     },
     {
         "id": "main-dish-3",
@@ -48,7 +50,8 @@
             "poivre"
         ],
         "price": 10,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 6
     },
     {
         "id": "main-dish-4",
@@ -65,7 +68,8 @@
             "poivre"
         ],
         "price": 12,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 6
     },
     {
         "id": "main-dish-5",
@@ -81,7 +85,8 @@
             "poivre"
         ],
         "price": 12,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 1
     },
     {
         "id": "main-dish-6",
@@ -98,6 +103,7 @@
             "piment"
         ],
         "price": 10,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 2
     }
 ]

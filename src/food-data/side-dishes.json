@@ -7,7 +7,8 @@
             "sel"
         ],
         "price": 3,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 5
     },
     {
         "id": "side-dish-2",
@@ -17,7 +18,8 @@
             "curcuma"
         ],
         "price": 3,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 2
     },
     {
         "id": "side-dish-3",
@@ -27,6 +29,7 @@
             "huile"
         ],
         "price": 5,
-        "quantity": 0
+        "quantity": 0,
+        "initial-speed-index": 7
     }
 ]
