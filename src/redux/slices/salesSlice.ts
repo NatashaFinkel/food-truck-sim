@@ -8,14 +8,18 @@ interface Sales {
   date: string;
 }
 
+interface SoldDishList {
+  soldDish: Sales[];
+}
+
 interface SalesState {
   sales: Sales[];
-  totalRevenue: number;
+  soldDishes: SoldDishList[];
 }
 
 const initialState: SalesState = {
   sales: [],
-  totalRevenue: 0,
+  soldDishes: [],
 };
 
 const salesSlice = createSlice({
@@ -24,14 +28,19 @@ const salesSlice = createSlice({
   reducers: {
     addSale: (state, action: PayloadAction<Sales>) => {
       state.sales.push(action.payload);
-      state.totalRevenue += action.payload.price * action.payload.quantity;
     },
-    clearSales: (state) => {
-      state.sales = [];
-      state.totalRevenue = 0;
+
+    AddDishToSoldOutList: (state, action: PayloadAction<string>) => {
+      const dishIndex = state.sales.findIndex(
+        (sale) => sale.id === action.payload
+      );
+      if (dishIndex !== -1) {
+        const [dish] = state.sales.splice(dishIndex, 1);
+        state.soldDishes.push({ soldDish: [dish] });
+      }
     },
   },
 });
 
-export const { addSale, clearSales } = salesSlice.actions;
+export const { addSale, AddDishToSoldOutList } = salesSlice.actions;
 export default salesSlice.reducer;
