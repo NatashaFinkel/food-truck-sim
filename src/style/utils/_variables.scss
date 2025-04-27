@@ -172,6 +172,12 @@ header {
   width: 50%;
 }
 
+.stock-item-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .stock-item {
   display: flex;
   flex-direction: column;

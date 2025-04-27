@@ -1,14 +1,29 @@
+import { JSX } from "react/jsx-runtime";
+
 function StockItem() {
-  return (
-    <div className="stock-item">
-      <span>
-        <i className="fa-solid fa-truck"></i>
-      </span>
-      <h4>Nom du plat</h4>
-      <span>stock restant (barre de progression)</span>
-      <span>Indice de popularité (barre d'intensité)</span>
-    </div>
-  );
+  interface DishList {
+    id: string;
+    name: string;
+    quantity: number;
+  }
+
+  const menu: DishList[] = JSON.parse(localStorage.getItem("Menu") || "[]");
+  console.log(menu);
+
+  const dishElements: JSX.Element[] = [];
+  menu.forEach((dish) => {
+    dishElements.push(
+      <div key={dish.id} className="stock-item">
+        <span>
+          <i className="fa-solid fa-truck"></i>
+        </span>
+        <p>{dish.name}</p>
+        <p>Stock restant : {dish.quantity}</p>
+      </div>
+    );
+  });
+
+  return dishElements;
 }
 
 export default StockItem;

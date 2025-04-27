@@ -13,9 +13,9 @@ function PlayBoard() {
         </div>
         <div className="container stock-container">
           <h2>En stock</h2>
-          <StockItem />
-          <StockItem />
-          <StockItem />
+          <div className="stock-item-container">
+            <StockItem />
+          </div>
         </div>
       </div>
     </div>
