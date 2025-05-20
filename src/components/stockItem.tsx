@@ -1,12 +1,6 @@
 import { JSX } from "react/jsx-runtime";
-
+import DishList from "../TypeScript/interfaces/DishList";
 function StockItem() {
-  interface DishList {
-    id: string;
-    name: string;
-    quantity: number;
-  }
-
   const menu: DishList[] = JSON.parse(localStorage.getItem("Menu") || "[]");
   console.log(menu);
 
@@ -19,7 +13,7 @@ function StockItem() {
         </span>
         <p>{dish.name}</p>
         <p>Stock restant : {dish.quantity}</p>
-      </div>,
+      </div>
     );
   });
 

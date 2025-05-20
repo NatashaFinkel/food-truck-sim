@@ -1,11 +1,5 @@
 import React from "react";
-
-interface AppButtonProps {
-  id: string;
-  className: string;
-  onClick: () => void;
-  children: React.ReactNode;
-}
+import AppButtonProps from "../TypeScript/interfaces/AppButtonProps";
 
 const AppButton: React.FC<AppButtonProps> = ({
   id,
