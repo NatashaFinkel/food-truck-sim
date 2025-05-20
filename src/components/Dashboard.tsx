@@ -7,6 +7,7 @@ import {
 } from "../redux/slices/stockSlice";
 import mainDishes from "../food-data/main-dishes.json";
 import sideDishes from "../food-data/side-dishes.json";
+import AppButton from "./AppButton";
 
 const Dashboard: React.FC = () => {
   const dispatch = useDispatch();
@@ -90,22 +91,20 @@ const Dashboard: React.FC = () => {
             <li>{dish.name}</li>
             <div className="btn-container">
               {" "}
-              <button
-                key={dish.id + "-add-btn"}
+              <AppButton
                 id={"ingrédient-" + dish.id + "-add-btn"}
                 className="btn add-btn"
                 onClick={() => handleAddDishToTheMenu(dish)}
               >
                 +
-              </button>
-              <button
-                key={dish.id + "-remove-btn"}
+              </AppButton>
+              <AppButton
                 id={"ingrédient-" + dish.id + "-remove-btn"}
                 className="btn remove-btn"
                 onClick={() => handleRemoveDishFromTheMenu(dish)}
               >
                 &#45;
-              </button>
+              </AppButton>
             </div>
           </div>
         ))}
