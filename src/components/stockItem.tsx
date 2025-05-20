@@ -19,7 +19,7 @@ function StockItem() {
         </span>
         <p>{dish.name}</p>
         <p>Stock restant : {dish.quantity}</p>
-      </div>
+      </div>,
     );
   });
 

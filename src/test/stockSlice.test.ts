@@ -70,30 +70,30 @@ describe("stockSlice", () => {
       ],
       price: 10,
       quantity: 0,
-      initialSpeedIndex: 6
+      initialSpeedIndex: 6,
     };
     const newState = stockReducer(
       { ...initialState, items: [...initialState.items] },
-      addDishToTheMenu(testMenuItem)
+      addDishToTheMenu(testMenuItem),
     );
     expect(newState.items).toHaveLength(3);
     const updatedTestMenuItem = newState.items.find(
-      (ing) => ing.id === "main-dish-3"
+      (ing) => ing.id === "main-dish-3",
     );
     expect(updatedTestMenuItem?.quantity).toBe(1);
   });
 
   it("should remove a dish from the menu", () => {
     const dishToRemove = initialState.items.find(
-      (ing) => ing.id === "side-dish-1"
+      (ing) => ing.id === "side-dish-1",
     );
     if (dishToRemove) {
       const newState = stockReducer(
         { ...initialState, items: [...initialState.items] },
-        removeDishFromTheMenu(dishToRemove)
+        removeDishFromTheMenu(dishToRemove),
       );
       expect(
-        newState.items.find((item) => item.id === "side-dish-1")?.quantity
+        newState.items.find((item) => item.id === "side-dish-1")?.quantity,
       ).toBe(9);
     }
   });

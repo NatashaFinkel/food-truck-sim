@@ -4,7 +4,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className="nav-bar">
       <ul>
-      <li>
+        <li>
           <a href="/playboard">Let's play !</a>
         </li>
         <li>

@@ -8,7 +8,7 @@ import {
 import mainDishes from "../food-data/main-dishes.json";
 import sideDishes from "../food-data/side-dishes.json";
 
-const Dashboard:  React.FC = () => {
+const Dashboard: React.FC = () => {
   const dispatch = useDispatch();
   const combinedDishes = [...mainDishes, ...sideDishes];
   const menuItems = useSelector((state: RootState) => state.stock.items);
@@ -47,7 +47,7 @@ const Dashboard:  React.FC = () => {
           dishElement.classList.add("menu-item");
           dishElement.innerHTML = `<div>${dish.name} : ${dish.quantity}</div>`;
           menuContainer.appendChild(dishElement);
-        }
+        },
       );
     }
   }

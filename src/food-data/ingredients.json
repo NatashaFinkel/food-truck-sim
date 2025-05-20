@@ -1,92 +1,92 @@
 [
-    {
-        "id": "ingrédient-1",
-        "name": "porc",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-2",
-        "name": "manioc",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-3",
-        "name": "oignon",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-4",
-        "name": "ail",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-5",
-        "name": "gingembre",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-6",
-        "name": "piment",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-7",
-        "name": "sel",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-8",
-        "name": "poivre",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-9",
-        "name": "zébu",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-10",
-        "name": "brèdes",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-11",
-        "name": "tomate",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-12",
-        "name": "poulet",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-13",
-        "name": "lait de coco",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-14",
-        "name": "poisson",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-15",
-        "name": "riz",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-16",
-        "name": "curcuma",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-17",
-        "name": "huile",
-        "quantity": 0
-    },
-    {
-        "id": "ingrédient-18",
-        "name": "bananes plantains",
-        "quantity": 0
-    }
+  {
+    "id": "ingrédient-1",
+    "name": "porc",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-2",
+    "name": "manioc",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-3",
+    "name": "oignon",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-4",
+    "name": "ail",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-5",
+    "name": "gingembre",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-6",
+    "name": "piment",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-7",
+    "name": "sel",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-8",
+    "name": "poivre",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-9",
+    "name": "zébu",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-10",
+    "name": "brèdes",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-11",
+    "name": "tomate",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-12",
+    "name": "poulet",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-13",
+    "name": "lait de coco",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-14",
+    "name": "poisson",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-15",
+    "name": "riz",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-16",
+    "name": "curcuma",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-17",
+    "name": "huile",
+    "quantity": 0
+  },
+  {
+    "id": "ingrédient-18",
+    "name": "bananes plantains",
+    "quantity": 0
+  }
 ]

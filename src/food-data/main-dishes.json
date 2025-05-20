@@ -1,103 +1,103 @@
 [
-    {
-        "id": "main-dish-1",
-        "name": "Ravitoto",
-        "description": "ragoût de porc aux feuilles de manioc",
-        "ingredients": [
-            "porc",
-            "manioc",
-            "oignon",
-            "ail",
-            "gingembre",
-            "piment",
-            "sel",
-            "poivre"
-        ],
-        "price": 12,
-        "quantity": 0
-    },
-    {
-        "id": "main-dish-2",
-        "name": "Romazava",
-        "description": "ragoût de viande de zébu aux feuilles de brèdes mafana",
-        "ingredients": [
-            "zébu",
-            "brèdes",
-            "tomate",
-            "oignon",
-            "ail",
-            "gingembre",
-            "piment",
-            "sel",
-            "poivre"
-        ],
-        "price": 10,
-        "quantity": 0
-    },
-    {
-        "id": "main-dish-3",
-        "name": "Poulet gingembre",
-        "ingredients": [
-            "poulet",
-            "gingembre",
-            "oignon",
-            "ail",
-            "tomate",
-            "piment",
-            "sel",
-            "poivre"
-        ],
-        "price": 10,
-        "quantity": 0
-    },
-    {
-        "id": "main-dish-4",
-        "name": "Poisson lait de coco",
-        "ingredients": [
-            "poisson",
-            "lait de coco",
-            "tomate",
-            "oignon",
-            "ail",
-            "gingembre",
-            "piment",
-            "sel",
-            "poivre"
-        ],
-        "price": 12,
-        "quantity": 0
-    },
-    {
-        "id": "main-dish-5",
-        "name": "poulet à la tomate",
-        "ingredients": [
-            "poulet",
-            "tomate",
-            "oignon",
-            "ail",
-            "gingembre",
-            "piment",
-            "sel",
-            "poivre"
-        ],
-        "price": 12,
-        "quantity": 0
-    },
-    {
-        "id": "main-dish-6",
-        "name": "Poisson braisé",
-        "ingredients": [
-            "poisson",
-            "sel",
-            "poivre",
-            "huile",
-            "oignon",
-            "tomate",
-            "ail",
-            "gingembre",
-            "piment"
-        ],
-        "price": 10,
-        "quantity": 0
-    }
+  {
+    "id": "main-dish-1",
+    "name": "Ravitoto",
+    "description": "ragoût de porc aux feuilles de manioc",
+    "ingredients": [
+      "porc",
+      "manioc",
+      "oignon",
+      "ail",
+      "gingembre",
+      "piment",
+      "sel",
+      "poivre"
+    ],
+    "price": 12,
+    "quantity": 0
+  },
+  {
+    "id": "main-dish-2",
+    "name": "Romazava",
+    "description": "ragoût de viande de zébu aux feuilles de brèdes mafana",
+    "ingredients": [
+      "zébu",
+      "brèdes",
+      "tomate",
+      "oignon",
+      "ail",
+      "gingembre",
+      "piment",
+      "sel",
+      "poivre"
+    ],
+    "price": 10,
+    "quantity": 0
+  },
+  {
+    "id": "main-dish-3",
+    "name": "Poulet gingembre",
+    "ingredients": [
+      "poulet",
+      "gingembre",
+      "oignon",
+      "ail",
+      "tomate",
+      "piment",
+      "sel",
+      "poivre"
+    ],
+    "price": 10,
+    "quantity": 0
+  },
+  {
+    "id": "main-dish-4",
+    "name": "Poisson lait de coco",
+    "ingredients": [
+      "poisson",
+      "lait de coco",
+      "tomate",
+      "oignon",
+      "ail",
+      "gingembre",
+      "piment",
+      "sel",
+      "poivre"
+    ],
+    "price": 12,
+    "quantity": 0
+  },
+  {
+    "id": "main-dish-5",
+    "name": "poulet à la tomate",
+    "ingredients": [
+      "poulet",
+      "tomate",
+      "oignon",
+      "ail",
+      "gingembre",
+      "piment",
+      "sel",
+      "poivre"
+    ],
+    "price": 12,
+    "quantity": 0
+  },
+  {
+    "id": "main-dish-6",
+    "name": "Poisson braisé",
+    "ingredients": [
+      "poisson",
+      "sel",
+      "poivre",
+      "huile",
+      "oignon",
+      "tomate",
+      "ail",
+      "gingembre",
+      "piment"
+    ],
+    "price": 10,
+    "quantity": 0
+  }
 ]

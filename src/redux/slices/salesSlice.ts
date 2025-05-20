@@ -32,7 +32,7 @@ const salesSlice = createSlice({
 
     AddDishToSoldOutList: (state, action: PayloadAction<string>) => {
       const dishIndex = state.sales.findIndex(
-        (sale) => sale.id === action.payload
+        (sale) => sale.id === action.payload,
       );
       if (dishIndex !== -1) {
         const [dish] = state.sales.splice(dishIndex, 1);
