@@ -17,14 +17,12 @@ const Dashboard: React.FC = () => {
   const handleAddDishToTheMenu = (dish: {
     id: string;
     name: string;
-    ingredients: string[];
     price: number;
     quantity: number;
   }) => {
     const newDish = {
       id: dish.id,
       name: dish.name,
-      ingredients: dish.ingredients,
       price: dish.price,
       quantity: dish.quantity,
     };
@@ -40,7 +38,6 @@ const Dashboard: React.FC = () => {
         (dish: {
           id: string;
           name: string;
-          ingredients: string[];
           price: number;
           quantity: number;
         }) => {
@@ -48,7 +45,7 @@ const Dashboard: React.FC = () => {
           dishElement.classList.add("menu-item");
           dishElement.innerHTML = `<div>${dish.name} : ${dish.quantity}</div>`;
           menuContainer.appendChild(dishElement);
-        }
+        },
       );
     }
   }
@@ -56,14 +53,12 @@ const Dashboard: React.FC = () => {
   const handleRemoveDishFromTheMenu = (dish: {
     id: string;
     name: string;
-    ingredients: string[];
     price: number;
     quantity: number;
   }) => {
     const newDish = {
       id: dish.id,
       name: dish.name,
-      ingredients: dish.ingredients,
       price: dish.price,
       quantity: dish.quantity,
     };
@@ -88,11 +83,9 @@ const Dashboard: React.FC = () => {
       <div className="ingredients-list">
         {combinedDishes.map((dish) => (
           <div key={dish.id} className="ingredients-list-item">
-            <li>
-              {dish.name}</li>
+            <li>{dish.name}</li>
             <div className="btn-container">
-               <span>{dish.price} €</span>
-              {" "}
+              <span>{dish.price} €</span>{" "}
               <AppButton
                 id={"ingrédient-" + dish.id + "-add-btn"}
                 className="btn add-btn"

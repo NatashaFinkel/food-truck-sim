@@ -46,11 +46,11 @@ describe("salesSlice", () => {
 
     const newState = salesReducer(
       initialStateWithSales,
-      AddDishToSoldOutList("main-dish-1")
+      AddDishToSoldOutList("main-dish-1"),
     );
     expect(newState.menuItem).toHaveLength(1);
     expect(
-      newState.menuItem.find((menuItem) => menuItem.id === "main-dish-1")
+      newState.menuItem.find((menuItem) => menuItem.id === "main-dish-1"),
     ).toBeUndefined();
     expect(newState.soldDishes).toHaveLength(1);
     expect(newState.soldDishes[0].soldDish[0].id).toBe("main-dish-1");

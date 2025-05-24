@@ -3,10 +3,7 @@
     "id": "side-dish-1",
     "name": "Riz nature",
     "description": "Une portion de riz blanc",
-    "ingredients": [
-      "riz",
-      "sel"
-    ],
+    "ingredients": ["riz", "sel"],
     "price": 3,
     "quantity": 0
   },
@@ -14,10 +11,7 @@
     "id": "side-dish-2",
     "name": "Riz au curcuma",
     "description": "Une portion de riz au curcuma",
-    "ingredients": [
-      "riz",
-      "curcuma"
-    ],
+    "ingredients": ["riz", "curcuma"],
     "price": 3,
     "quantity": 0
   },
@@ -25,10 +19,7 @@
     "id": "side-dish-3",
     "description": "Une portion de bananes plantains",
     "name": "Bananes plantains",
-    "ingredients": [
-      "bananes plantains",
-      "huile"
-    ],
+    "ingredients": ["bananes plantains", "huile"],
     "price": 5,
     "quantity": 0
   }
