@@ -48,7 +48,7 @@ const Dashboard: React.FC = () => {
           dishElement.classList.add("menu-item");
           dishElement.innerHTML = `<div>${dish.name} : ${dish.quantity}</div>`;
           menuContainer.appendChild(dishElement);
-        },
+        }
       );
     }
   }
@@ -88,7 +88,8 @@ const Dashboard: React.FC = () => {
       <div className="ingredients-list">
         {combinedDishes.map((dish) => (
           <div key={dish.id} className="ingredients-list-item">
-            <li>{dish.name}</li>
+            <li>
+              {dish.name}</li>
             <div className="btn-container">
                <span>{dish.price} €</span>
               {" "}

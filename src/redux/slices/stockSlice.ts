@@ -22,7 +22,7 @@ const stockSlice = createSlice({
   reducers: {
     addDishToTheMenu: (state, action: PayloadAction<MenuItem>) => {
       const alreadyStoragedItem = state.items.find(
-        (stockItem) => stockItem.id === action.payload.id,
+        (stockItem) => stockItem.id === action.payload.id
       );
       if (alreadyStoragedItem) {
         alreadyStoragedItem.quantity += action.payload.quantity + 1;
@@ -37,13 +37,13 @@ const stockSlice = createSlice({
 
     removeDishFromTheMenu: (state, action: PayloadAction<MenuItem>) => {
       const alreadyStoragedItem = state.items.find(
-        (stockItem) => stockItem.id === action.payload.id,
+        (stockItem) => stockItem.id === action.payload.id
       );
       if (alreadyStoragedItem) {
         alreadyStoragedItem.quantity -= 1;
         if (alreadyStoragedItem.quantity <= 0) {
           state.items = state.items.filter(
-            (ing) => ing.id !== action.payload.id,
+            (ing) => ing.id !== action.payload.id
           );
         }
         localStorage.setItem("Menu", JSON.stringify(state.items));
