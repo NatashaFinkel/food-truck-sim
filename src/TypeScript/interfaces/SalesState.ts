@@ -1,7 +1,7 @@
-import { MenuItem } from "./MenuItem";
-import { SoldDishList } from "./SoldDishList";
+import MenuItem from "./MenuItem";
+import SoldDishList from "./SoldDishList";
 
-export interface SalesState {
+export default interface SalesState {
   menuItem: MenuItem[];
   soldDishes: SoldDishList[];
 }

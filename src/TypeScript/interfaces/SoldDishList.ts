@@ -1,5 +1,5 @@
-import { MenuItem } from "./MenuItem";
+import MenuItem from "./MenuItem";
 
-export interface SoldDishList {
+export default interface SoldDishList {
   soldDish: MenuItem[];
 }

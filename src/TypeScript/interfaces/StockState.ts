@@ -1,5 +1,5 @@
-import { MenuItem } from "./MenuItem";
+import MenuItem from "./MenuItem";
 
-export interface StockState {
+export default interface StockState {
   items: MenuItem[];
 }

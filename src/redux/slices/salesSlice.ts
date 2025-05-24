@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { MenuItem } from "../../TypeScript/interfaces/MenuItem";
-
-import { SalesState } from "../../TypeScript/interfaces/SalesState";
+import MenuItem from "../../TypeScript/interfaces/MenuItem";
+import SalesState from "../../TypeScript/interfaces/SalesState";
 
 const initialState: SalesState = {
   menuItem: [],
