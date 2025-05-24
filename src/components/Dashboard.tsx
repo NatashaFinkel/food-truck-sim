@@ -90,6 +90,7 @@ const Dashboard: React.FC = () => {
           <div key={dish.id} className="ingredients-list-item">
             <li>{dish.name}</li>
             <div className="btn-container">
+               <span>{dish.price} €</span>
               {" "}
               <AppButton
                 id={"ingrédient-" + dish.id + "-add-btn"}
