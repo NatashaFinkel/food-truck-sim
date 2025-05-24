@@ -3,14 +3,7 @@ import stockReducer, {
   removeDishFromTheMenu,
 } from "../redux/slices/stockSlice";
 
-interface MenuItem {
-  id: string;
-  name: string;
-  ingredients: string[];
-  price: number;
-  quantity: number;
-  initialSpeedIndex: number;
-}
+import { MenuItem } from "../TypeScript/interfaces/MenuItem";
 
 describe("stockSlice", () => {
   let initialState: { items: MenuItem[] };

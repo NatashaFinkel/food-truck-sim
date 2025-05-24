@@ -1,16 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface MenuItem {
-  id: string;
-  name: string;
-  ingredients: string[];
-  price: number;
-  quantity: number;
-}
-
-interface StockState {
-  items: MenuItem[];
-}
+import { MenuItem, StockState } from "../../TypeScript/interfaces/MenuItem";
 
 const initialState: StockState = {
   items: JSON.parse(localStorage.getItem("Menu") || "[]"),
