@@ -26,16 +26,14 @@ describe("stockSlice", () => {
             "poivre",
           ],
           price: 12,
-          quantity: 5,
-          initialSpeedIndex: 6,
+          quantity: 5
         },
         {
           id: "side-dish-1",
           name: "Riz nature",
           ingredients: ["riz", "sel"],
           price: 3,
-          quantity: 10,
-          initialSpeedIndex: 5,
+          quantity: 10
         },
       ],
     };
@@ -62,8 +60,7 @@ describe("stockSlice", () => {
         "poivre",
       ],
       price: 10,
-      quantity: 0,
-      initialSpeedIndex: 6,
+      quantity: 0
     };
     const newState = stockReducer(
       { ...initialState, items: [...initialState.items] },
