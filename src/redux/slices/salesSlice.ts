@@ -1,24 +1,17 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface Sales {
-  id: string;
-  item: string;
-  price: number;
-  quantity: number;
-  date: string;
-}
+import { MenuItem } from "../../TypeScript/interfaces/MenuItem";
 
 interface SoldDishList {
-  soldDish: Sales[];
+  soldDish: MenuItem[];
 }
 
 interface SalesState {
-  sales: Sales[];
+  menuItem: MenuItem[];
   soldDishes: SoldDishList[];
 }
 
 const initialState: SalesState = {
-  sales: [],
+  menuItem: [],
   soldDishes: [],
 };
 
@@ -26,16 +19,16 @@ const salesSlice = createSlice({
   name: "sales",
   initialState,
   reducers: {
-    addSale: (state, action: PayloadAction<Sales>) => {
-      state.sales.push(action.payload);
+    addSale: (state, action: PayloadAction<MenuItem>) => {
+      state.menuItem.push(action.payload);
     },
 
     AddDishToSoldOutList: (state, action: PayloadAction<string>) => {
-      const dishIndex = state.sales.findIndex(
+      const dishIndex = state.menuItem.findIndex(
         (sale) => sale.id === action.payload,
       );
       if (dishIndex !== -1) {
-        const [dish] = state.sales.splice(dishIndex, 1);
+        const [dish] = state.menuItem.splice(dishIndex, 1);
         state.soldDishes.push({ soldDish: [dish] });
       }
     },
