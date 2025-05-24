@@ -4,7 +4,3 @@ export interface MenuItem {
   price: number;
   quantity: number;
 }
-
-export interface StockState {
-  items: MenuItem[];
-}

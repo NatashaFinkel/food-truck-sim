@@ -1,14 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { MenuItem } from "../../TypeScript/interfaces/MenuItem";
 
-interface SoldDishList {
-  soldDish: MenuItem[];
-}
-
-interface SalesState {
-  menuItem: MenuItem[];
-  soldDishes: SoldDishList[];
-}
+import { SalesState } from "../../TypeScript/interfaces/SalesState";
 
 const initialState: SalesState = {
   menuItem: [],
